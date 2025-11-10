@@ -5,30 +5,84 @@
 //   modules: ['@bg-dev/nuxt-naiveui']
 // })
 
-import AutoImport from 'unplugin-auto-import/vite'
-import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
-import Components from 'unplugin-vue-components/vite'
+// import AutoImport from 'unplugin-auto-import/vite'
+// import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
+// import Components from 'unplugin-vue-components/vite'
+//
+// // https://nuxt.com/docs/api/configuration/nuxt-config
+// export default defineNuxtConfig({
+//     modules: ['@bg-dev/nuxt-naiveui'],
+//     vite: {
+//         plugins: [
+//             AutoImport({
+//                 imports: [
+//                     {
+//                         'naive-ui': [
+//                             'useDialog',
+//                             'useMessage',
+//                             'useNotification',
+//                             'useLoadingBar'
+//                         ]
+//                     }
+//                 ]
+//             }),
+//             Components({
+//                 resolvers: [NaiveUiResolver()]
+//             })
+//         ]
+//     }
+// })
+
+
+import AutoImport from "unplugin-auto-import/vite";
+import { NaiveUiResolver } from "unplugin-vue-components/resolvers";
+import Components from "unplugin-vue-components/vite";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    modules: ['@bg-dev/nuxt-naiveui'],
+    future: {
+        compatibilityVersion: 4,
+    },
+    compatibilityDate: "2025-10-16",
+    devtools: { enabled: true },
+    ssr: false,
+    nitro: {
+        experimental: {
+            wasm: true,
+        },
+    },
+    modules: [
+        "@bg-dev/nuxt-naiveui"
+    ],
+    vue: {
+        compilerOptions: {
+            isCustomElement: (tag) => {
+                const customElements = ["cap-widget"];
+                return customElements.includes(tag);
+            },
+        },
+    },
     vite: {
         plugins: [
             AutoImport({
                 imports: [
                     {
-                        'naive-ui': [
-                            'useDialog',
-                            'useMessage',
-                            'useNotification',
-                            'useLoadingBar'
-                        ]
-                    }
-                ]
+                        "naive-ui": [
+                            "useDialog",
+                            "useMessage",
+                            "useNotification",
+                            "useLoadingBar",
+                        ],
+                    },
+                ],
             }),
             Components({
-                resolvers: [NaiveUiResolver()]
-            })
-        ]
-    }
-})
+                resolvers: [NaiveUiResolver()],
+            }),
+        ],
+    },
+    devServer: {
+        host: "0.0.0.0",
+        port: 8090,
+    },
+});
