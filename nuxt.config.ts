@@ -37,14 +37,20 @@
 import AutoImport from "unplugin-auto-import/vite";
 import { NaiveUiResolver } from "unplugin-vue-components/resolvers";
 import Components from "unplugin-vue-components/vite";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     future: {
         compatibilityVersion: 4,
     },
+    css: ['/assets/css/main.css'],
     compatibilityDate: "2025-10-16",
-    devtools: { enabled: true },
+    devtools: { enabled: true,
+
+        timeline: {
+            enabled: true,
+        },},
     ssr: false,
     nitro: {
         experimental: {
@@ -76,6 +82,7 @@ export default defineNuxtConfig({
                     },
                 ],
             }),
+            tailwindcss(),
             Components({
                 resolvers: [NaiveUiResolver()],
             }),
