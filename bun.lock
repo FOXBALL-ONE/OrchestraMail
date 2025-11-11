@@ -15,6 +15,14 @@
       },
       "devDependencies": {
         "@nuxtjs/tailwindcss": "^6.14.0",
+        "@vicons/antd": "^0.13.0",
+        "@vicons/carbon": "^0.13.0",
+        "@vicons/fa": "^0.13.0",
+        "@vicons/fluent": "^0.13.0",
+        "@vicons/ionicons4": "^0.13.0",
+        "@vicons/ionicons5": "^0.13.0",
+        "@vicons/material": "^0.13.0",
+        "@vicons/tabler": "^0.13.0",
       },
     },
   },
@@ -464,6 +472,22 @@
     "@unhead/vue": ["@unhead/vue@2.0.19", "https://mirrors.huaweicloud.com/repository/npm/@unhead/vue/-/vue-2.0.19.tgz", { "dependencies": { "hookable": "^5.5.3", "unhead": "2.0.19" }, "peerDependencies": { "vue": ">=3.5.18" } }, "sha512-7BYjHfOaoZ9+ARJkT10Q2TjnTUqDXmMpfakIAsD/hXiuff1oqWg1xeXT5+MomhNcC15HbiABpbbBmITLSHxdKg=="],
 
     "@vercel/nft": ["@vercel/nft@0.30.3", "https://mirrors.huaweicloud.com/repository/npm/@vercel/nft/-/nft-0.30.3.tgz", { "dependencies": { "@mapbox/node-pre-gyp": "^2.0.0", "@rollup/pluginutils": "^5.1.3", "acorn": "^8.6.0", "acorn-import-attributes": "^1.9.5", "async-sema": "^3.1.1", "bindings": "^1.4.0", "estree-walker": "2.0.2", "glob": "^10.4.5", "graceful-fs": "^4.2.9", "node-gyp-build": "^4.2.2", "picomatch": "^4.0.2", "resolve-from": "^5.0.0" }, "bin": { "nft": "out/cli.js" } }, "sha512-UEq+eF0ocEf9WQCV1gktxKhha36KDs7jln5qii6UpPf5clMqDc0p3E7d9l2Smx0i9Pm1qpq4S4lLfNl97bbv6w=="],
+
+    "@vicons/antd": ["@vicons/antd@0.13.0", "https://mirrors.huaweicloud.com/repository/npm/@vicons/antd/-/antd-0.13.0.tgz", {}, "sha512-yrUGoUSz2BbGupk9ghQOahc04n5H3MwUDM9pVPsLh9U1uqB47oRWZvYRiZaT1JKPqgTgSE6BXcVw4i9MOF4M+g=="],
+
+    "@vicons/carbon": ["@vicons/carbon@0.13.0", "https://mirrors.huaweicloud.com/repository/npm/@vicons/carbon/-/carbon-0.13.0.tgz", {}, "sha512-Z/jExyyS4gsXJc66oTqV/j98nsaiX2JlQ0IUwu9Ms3rztf8VOHEQRuX8Jey1/zbxJpFY/tU+bWvKPRFYGIvCWQ=="],
+
+    "@vicons/fa": ["@vicons/fa@0.13.0", "https://mirrors.huaweicloud.com/repository/npm/@vicons/fa/-/fa-0.13.0.tgz", {}, "sha512-BFcDewcT78fSn4Y/fOgqlswbLUEW3+qJK2iJiNtgmkMzadBVpDXhNyVKsYM3V2uKPvDUrZT0JCWDWVRCiBXJZA=="],
+
+    "@vicons/fluent": ["@vicons/fluent@0.13.0", "https://mirrors.huaweicloud.com/repository/npm/@vicons/fluent/-/fluent-0.13.0.tgz", {}, "sha512-bYGZsOE3qzvm3Cm43e7tybgGlr5ZUpYqtRZq0g0Tfupe8jIzLolpvQLNUt1zS8Mgt6goTbUk5YH7Fkv16jkykg=="],
+
+    "@vicons/ionicons4": ["@vicons/ionicons4@0.13.0", "https://mirrors.huaweicloud.com/repository/npm/@vicons/ionicons4/-/ionicons4-0.13.0.tgz", {}, "sha512-5WHIl/4R5a4i9GONa+hIQWxg/WczrbsCdqxawHZvdd3drsEr+Q3yzlfS+NNRO4WS3uDW2uWLCwoW+yp5TgcKeQ=="],
+
+    "@vicons/ionicons5": ["@vicons/ionicons5@0.13.0", "https://mirrors.huaweicloud.com/repository/npm/@vicons/ionicons5/-/ionicons5-0.13.0.tgz", {}, "sha512-zvZKBPjEXKN7AXNo2Na2uy+nvuv6SP4KAMQxpKL2vfHMj0fSvuw7JZcOPCjQC3e7ayssKnaoFVAhbYcW6v41qQ=="],
+
+    "@vicons/material": ["@vicons/material@0.13.0", "https://mirrors.huaweicloud.com/repository/npm/@vicons/material/-/material-0.13.0.tgz", {}, "sha512-lKVxFNprM+CaBkUH3gt6VjIeiMsKQl2zARQMwTCZruQl2vRHzyeZiKeCflWS99CEfv2JzX/6y697smxlzyxcVw=="],
+
+    "@vicons/tabler": ["@vicons/tabler@0.13.0", "https://mirrors.huaweicloud.com/repository/npm/@vicons/tabler/-/tabler-0.13.0.tgz", {}, "sha512-AykuhiqjszkIoAL/7knIFm6RDOBS1ZmQdJfQ+RNLEah0fVsxykUFCfMBSNZh8lOzC85EtdD1k5g/sv5GYk0Ohg=="],
 
     "@vitejs/plugin-vue": ["@vitejs/plugin-vue@6.0.1", "https://mirrors.huaweicloud.com/repository/npm/@vitejs/plugin-vue/-/plugin-vue-6.0.1.tgz", { "dependencies": { "@rolldown/pluginutils": "1.0.0-beta.29" }, "peerDependencies": { "vite": "^5.0.0 || ^6.0.0 || ^7.0.0", "vue": "^3.2.25" } }, "sha512-+MaE752hU0wfPFJEUAIxqw18+20euHHdxVtMvbFcOEpjEyfqXH/5DCoTHiVJ0J29EhTJdoTkjEv5YBKU9dnoTw=="],
 
